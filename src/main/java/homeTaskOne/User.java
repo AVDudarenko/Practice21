@@ -14,13 +14,13 @@ public class User {
     private static int countForId = 0;
 
     public User(String name, int age, Sex sex) {
+        //считаю, что добавлять логику в контруктор - bad practice. Присваивание id вынесено в метод.
         this.name = name;
         this.age = age;
         this.sex = sex;
     }
 
     public User() {
-
     }
 
     public void addPerson(User person) {
